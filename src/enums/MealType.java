@@ -2,13 +2,13 @@ package enums;
 
 import java.util.Random;
 
-public enum TransportType {
-    CAR, BUS, PLANE, SHIP, TRAIN;
+public enum MealType {
+    RO, BB, HB, FB, AI, UAI;
 
     private static final Random RANDOM = new Random();
 
-    public static TransportType randomValue()  {
-        TransportType[] values = values();
+    public static MealType randomValue()  {
+        MealType[] values = values();
         return values[RANDOM.nextInt(values.length)];
     }
 

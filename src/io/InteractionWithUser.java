@@ -5,6 +5,7 @@ import enums.TourType;
 import java.util.Scanner;
 
 public class InteractionWithUser {
+    //TBI: generate all tours
     public String start() {
         System.out.println("Which tours should be generated?");
 
@@ -18,6 +19,7 @@ public class InteractionWithUser {
         return tourType;
     }
 
+    //implement validation for user input
     public void validateType(String tourType){}
 
 }

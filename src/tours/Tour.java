@@ -1,27 +1,31 @@
 package tours;
 
-import enums.Meal;
+import enums.MealType;
 import enums.TourType;
 import enums.TransportType;
 
 public abstract class Tour {
     //transportation, meals, number of days
-    private TourType tourType;
-    private int minNumOfDays;
-    private int maxNumOfDays;
-    private Meal mealType;
-    private TransportType transportType;
-    private int cost;
+    private int duration;
+    private long cost;
 
-    @Override
-    public String toString() {
-        return "Tour{" +
-                "tourType=" + tourType +
-                ", minNumOfDays=" + minNumOfDays +
-                ", maxNumOfDays=" + maxNumOfDays +
-                ", mealType=" + mealType +
-                ", transportType=" + transportType +
-                ", cost=" + cost +
-                '}';
+    public long getCost() {
+        return cost;
     }
+
+    public void setCost(long cost) {
+        this.cost = cost;
+    }
+
+    public int getDuration() {
+        return duration;
+    }
+
+    public void setDuration(int duration) {
+        this.duration = duration;
+    }
+
+    public abstract TourType getTourType();
+
+    public abstract TransportType getTransportType();
 }
