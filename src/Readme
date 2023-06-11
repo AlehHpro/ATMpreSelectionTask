@@ -4,7 +4,7 @@ Task 1
 Design object model for given domain.
 Please demonstrate usage of:
 •	Classes (abstract classes - if applicable)
-•	Interfaces
+•	interfaces
 •	Inheritance
 •	Polymorphism
 •	Encapsulation

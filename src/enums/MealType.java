@@ -3,7 +3,7 @@ package enums;
 import java.util.Random;
 
 public enum MealType {
-    RO, BB, HB, FB, AI, UAI;
+    RO, BB, HB, FB, AI, UAI, NOT_INCLUDED;
 
     private static final Random RANDOM = new Random();
 
