@@ -55,19 +55,19 @@ public class Main {
                     continue;
                 }
 
-            } else if (input.equals(CommandType.SBTT.name())) {
+            } else if (input.equals(CommandType.SORT_BY_TOUR_TYPE.name())) {
                 List<Tour> allTours = getTourList();
                 Collections.sort(allTours, allTours.get(0).tourTypeComparator());
                 for (Tour v : allTours) {
                     System.out.println(v);
                 }
-            } else if (input.equals(CommandType.SBD.name())) {
+            } else if (input.equals(CommandType.SORT_BY_DURATION.name())) {
                 List<Tour> allTours = getTourList();
                 Collections.sort(allTours, allTours.get(0).durationComparator());
                 for (Tour v : allTours) {
                     System.out.println(v);
                 }
-            } else if (input.equals(CommandType.SBTR.name())) {
+            } else if (input.equals(CommandType.SORT_BY_TRANSPORT.name())) {
                 List<Tour> allTours = getTourList();
                 Collections.sort(allTours, allTours.get(0).transportTypeComparator());
                 for (Tour v : allTours) {
